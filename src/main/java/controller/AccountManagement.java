@@ -11,15 +11,6 @@ import java.util.logging.Logger;
 import javax.servlet.ServletException;
 
 
-vvvvvvvvvv
-
-    private void showAccount(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int id = Integer.parseInt(req.getParameter("accId"));
-        Account account = accountDAO.getAccountById(id);
-        req.setAttribute("account", account);
-        req.getRequestDispatcher("inforUser.jsp").forward(req, resp);
-    }
-
     private void showAdminAccount(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //Mở comment sau khi hoàn tất task login, thay tên session bằng session tương ứng
         //        HttpSession session = req.getSession();
