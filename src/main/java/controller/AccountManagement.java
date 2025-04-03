@@ -13,20 +13,6 @@ import javax.servlet.ServletException;
 
             }
 
-            switch (action) {
-                case "viewAllUser":
-                    viewAllUser(req, resp);
-                    break;
-                case "viewAccountDetails":
-                    showAccount(req, resp);
-                    break;
-                case "viewAdminAccount":
-                    showAdminAccount(req, resp);
-                    break;
-                default:
-                    throw new AssertionError();
-            }
-        } catch (Exception ex) {
             Logger.getLogger(AccountManagement.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
