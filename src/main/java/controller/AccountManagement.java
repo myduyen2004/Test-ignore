@@ -11,17 +11,7 @@ import java.util.logging.Logger;
 import javax.servlet.ServletException;
 
 
-            }
-
-            Logger.getLogger(AccountManagement.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
-    private void viewAllUser(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Account> list = accountDAO.getAccountUser();
-        req.setAttribute("list", list);
-        req.getRequestDispatcher("user-manage.jsp").forward(req, resp);
-    }
+vvvvvvvvvv
 
     private void showAccount(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("accId"));
